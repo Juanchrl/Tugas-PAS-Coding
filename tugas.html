@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Itemku prototype</title>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="redirectToHome()">
+            <img src="itemkufortugas.png" alt="itemku_logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products">
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Daftar</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="six-pack-products">
+        <div class="product" id="product1">
+            <div class="pack">
+                <img src="robuxfortugas.png" alt="Product 1 Image">
+            </div>
+            <h2>Robux</h2>
+            <p class="price">Rp9.800</p>
+            <button onclick="redirectToDetails('product1.html')">Beli Langsung</button>
+        </div>
+        <div class="product" id="product2">
+            <div class="pack">
+                <img src="robuxfortugas.png" alt="Product 2 Image">
+            </div>
+            <h2>Robux</h2>
+            <p class="price">Rp10.200</p>
+            <button onclick="redirectToDetails('product2.html')">Beli Langsung</button>
+        </div>
+        <div class="product" id="product3">
+            <div class="pack">
+                <img src="robuxfortugas.png" alt="Product 1 Image">
+            </div>
+            <h2>Robux</h2>
+            <p class="price">Rp13.000</p>
+            <button onclick="redirectToDetails('product1.html')">Beli Langsung</button>
+        </div>
+        <div class="product" id="product4">
+            <div class="pack">
+                <img src="robuxfortugas.png" alt="Product 1 Image">
+            </div>
+            <h2>Robux</h2>
+            <p class="price">Rp13.400</p>
+            <button onclick="redirectToDetails('product1.html')">Beli Langsung</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>itemku v2.0.0 © 2014 - 2023 PT. Five Jack All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function redirectToDetails(page) {
+            window.location.href = page;
+        }
+        function redirectToHome() {
+            window.location.href = 'home.html';
+        }
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     const slides = document.querySelectorAll(".carousel-slide");
+        //     let currentSlideIndex = 0;
+        // })
+
+    </script>
+
+</body>
+</html>

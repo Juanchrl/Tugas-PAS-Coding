@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Robux a</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo img {
+            max-width: 800px;
+            height: auto;
+        }
+
+        .product-details {
+            display: flex;
+            max-width: 800px;
+            margin: 45px auto;
+        }
+
+        .product-image img {
+        max-width: auto;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        }
+
+        .product-info {
+            padding: 20px;
+            flex-grow: 0;
+            border: 1px solid black;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff8c00;
+        }
+
+        button {
+            background-color: #ff8c00;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e1b073;
+        }
+
+        #about-button {
+            background-color: white;
+        }
+
+        #about-button:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo" onclick="redirectToHome()">
+            <button onclick="redirectToMainwebsite('tugas.html')">🔙</button>
+            <img src="itemkufortugas.png" alt="itemku_logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products">
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Daftar</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a id="about-button" href="#" onclick="redirectToAbout()">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-details">
+        <div class="product-image">
+            <img src="robuxfortugas.png" alt="Product 1 Image" style="width: 50%; height: 70%;">
+        </div>
+        <div class="product-info">
+            <h1>Robux</h1>
+            <p class="description">
+                Robux 5 hari, termurah, terbaik, terpercaya, dan tercepat!</p>
+            <p class="price">Rp9.800</p>
+            <button onclick="placeOrder()">Order Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>itemku v2.0.0 © 2014 - 2023 PT. Five Jack All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function redirectToHome() {
+            window.location.href = 'home.html';
+        }
+
+        function placeOrder() {
+            alert('Order placed successfully for Robux a!');
+        }
+        
+        function redirectToAbout() {
+            window.location.href = 'about.html';
+        }
+    </script>
+
+</body>
+</html>

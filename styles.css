@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: white;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: auto;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.six-pack-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+    max-width: 75vw;
+    margin: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.search-bar input {
+    padding: 18px;
+    border: 2px solid #ddd;
+    border-radius: 200px;
+}
+
+.search-bar button {
+    background-color: #fff;
+    border: 0px solid #ddd;
+    border-radius: 200px;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+}
+
+.search-bar button:hover {
+    background-color: whitesmoke;
+}
+
+.product {
+    border: 1px solid black;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.product3,
+.product4,
+.product5 {
+    text-align: center;
+    width: calc(33.33% - 2em);
+    cursor: pointer;
+}
+
+.product .pack img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product .pack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    margin: 0 auto 1em;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.price {
+    font-weight: bold;
+    color: darkorange;
+}
+
+button {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 1em;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color:#e1b073;
+}
+
+/* Running text styles */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-item {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+footer {
+    background-color: #e9e9e9;
+    color: #272323;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

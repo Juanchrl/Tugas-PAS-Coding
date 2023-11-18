@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About itemku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .about-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: rgb(56, 56, 193);
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="redirectToHome()">
+            <button onclick="redirectToMainwebsite('tugas.html')">🔙</button>
+            <img src="itemkufortugas.png" alt="itemku_logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products">
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Daftar</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a id="about-button" href="#" onclick="redirectToAbout()">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <h2>About itemku</h2>
+        <p>
+            itemku is a platform that provides a marketplace for various digital products. Our mission is to create a secure and convenient environment for buying and selling digital goods such as in-game items, virtual currency, and more.
+        </p>
+        <p>
+            With a focus on user satisfaction and trust, itemku strives to connect buyers and sellers in a transparent and reliable way. Whether you're a gamer looking for in-game assets or a seller wanting to reach a broader audience, itemku is here to facilitate your digital transactions.
+        </p>
+        <p>
+            Thank you for choosing itemku for your digital marketplace needs!
+        </p>
+    </div>
+
+    <footer>
+        <p>itemku v2.0.0 © 2014 - 2023 PT. Five Jack All Rights Reserved.</p>
+    </footer>
+
+</body>
+<script>
+    function redirectToHome() {
+    window.location.href = 'home.html';
+}
+</script>
+</html>
